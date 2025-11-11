@@ -18,12 +18,13 @@
 <body class="bg-white text-gray-900 font-sans leading-relaxed">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-sm fixed w-full z-20">
+  <nav class="bg-white shadow-sm fixed w-full z-20 top-0">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold tracking-wide">Sharayu Bhute</h1>
       <ul class="flex space-x-6 text-sm font-medium uppercase">
         <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
         <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
         <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
       </ul>
@@ -31,24 +32,15 @@
   </nav>
 
   <!-- Home Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center bg-blue-50 px-6 pt-20">
+  <section id="home" class="min-h-screen flex items-center justify-center bg-blue-50 px-6 pt-28">
     <div class="text-center max-w-xl">
       <img src="profilephoto.png" alt="Profile" class="mx-auto rounded-full w-36 h-36 mb-6 shadow-md">
       <h1 class="text-4xl font-bold mb-2">Hi, I'm Sharayu Bhute</h1>
       <h2 class="text-lg text-gray-600 mb-4">AI & Machine Learning Developer</h2>
       <p class="text-md text-gray-700 mb-6 italic">Building intelligent solutions that transform ideas into AI-powered reality.</p>
       <div class="space-y-3">
-  <!-- <a href="sharayu_cv.docx" download target="_blank" 
-     class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg shadow transition">
-     Download Resume
-  </a> -->
-  <br>
-  <a href="sharayu_cv.pdf" target="_blank" 
-     class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg shadow transition">
-     View Resume
-  </a>
-</div>
-
+        <a href="sharayu_cv.pdf" target="_blank" class="inline-block border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg shadow transition">View Resume</a>
+      </div>
     </div>
   </section>
 
@@ -59,23 +51,13 @@
       <div class="grid md:grid-cols-2 gap-10">
         <div>
           <p class="text-gray-700 text-lg mb-4">
-                I'm a B.Tech 3rd-year Student passionate about Artificial Intelligence, Machine Learning, and Python development. 
-
-Currently building Projects like Phish Trap AI(a real-time phishing URL detector) ,etc and I enjoy solving real-world problems using data , and i'm actively preparing for GATE CSE 2026.
+            I'm a B.Tech 3rd-year student passionate about Artificial Intelligence, Machine Learning, and Python development. Currently building projects like <strong>Phish Trap AI</strong> (a real-time phishing URL detector), and preparing for <strong>GATE CSE 2026</strong>.
           </p>
           <p class="text-gray-700 text-lg">
-               I have hands-on experience with python, scikit-learn, pandas , numpy, and frontend tools like HTML/CSS
-            Currently, I’m exploring advanced deep learning architectures, contributing to open-source projects, and constantly pushing the boundaries of what AI can do.
+            I have hands-on experience with Python, scikit-learn, pandas, NumPy, and frontend tools like HTML/CSS. I’m exploring deep learning architectures, contributing to open-source, and constantly pushing boundaries of AI.
           </p>
         </div>
         <div>
-          <h3 class="text-xl font-semibold mb-3">Skills</h3>
-          <ul class="list-disc list-inside text-gray-700 mb-6">
-            <li>Python, Pandas, NumPy</li>
-            <li>Scikit-learn</li>
-            <li>HTML,CSS</li>
-            <li>Java</li>
-          </ul>
           <h3 class="text-xl font-semibold mb-3">Education</h3>
           <div class="space-y-4">
             <div class="bg-gray-100 p-4 rounded shadow-sm">
@@ -92,6 +74,37 @@ Currently building Projects like Phish Trap AI(a real-time phishing URL detector
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="bg-blue-50 px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+
+        <!-- Programming Languages -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:scale-105">
+          <i data-feather="code" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+          <h3 class="text-xl font-semibold mb-2">Programming</h3>
+          <p class="text-gray-600">Python, Java, HTML, CSS</p>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:scale-105">
+          <i data-feather="bar-chart-2" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+          <h3 class="text-xl font-semibold mb-2">Data Analysis & Visualization</h3>
+          <p class="text-gray-600">Pandas, NumPy, Matplotlib</p>
+        </div>
+
+        <!-- Machine Learning & NLP -->
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition transform hover:scale-105">
+          <i data-feather="cpu" class="w-12 h-12 mx-auto mb-4 text-blue-600"></i>
+          <h3 class="text-xl font-semibold mb-2">Machine Learning & NLP</h3>
+          <p class="text-gray-600">Scikit-learn, NLP, Supervised & Unsupervised Learning</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects" class="bg-blue-50 px-6 py-20">
     <div class="max-w-6xl mx-auto">
@@ -103,43 +116,38 @@ Currently building Projects like Phish Trap AI(a real-time phishing URL detector
           <img src="project1.png" alt="Green Cart App" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Green Cart AI</h3>
-            <p class="text-gray-600 mb-3">
-              An AI-powered model which identify different types of customers based on their spending behavior and income levels — helping businesses tailor marketing strategies effectively..
-            </p>
+            <p class="text-gray-600 mb-3">AI-powered model identifying types of customers based on spending behavior.</p>
             <a href="https://github.com/sharayu-bhute/greencartapp.git" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a><br>
             <a href="https://www.linkedin.com/posts/sharayu-bhute-59920a327_just-built-greencart-ai-your-eco-friendly-activity-7338508048241471488-ZVKd" target="_blank" class="text-blue-600 hover:underline">Watch on LinkedIn</a>
           </div>
         </div>
+
         <!-- Project 2 -->
         <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition transform hover:scale-105">
           <img src="cluster_img.png" alt="Customer Segmentation AI" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-xl font-semibold mb-2">Customer Segmentation using K-Means Clusterin</h3>
-            <p class="text-gray-600 mb-3">
-              An AI-powered recommendation engine suggesting eco-friendly product alternatives using NLP and category-based filtering.
-            </p>
+            <h3 class="text-xl font-semibold mb-2">Customer Segmentation using K-Means Clustering</h3>
+            <p class="text-gray-600 mb-3">AI-powered segmentation model to understand customer patterns.</p>
             <a href="https://github.com/sharayu-bhute/ml_projects" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a><br>
-            <a href="https://www.linkedin.com/posts/sharayu-bhute_customer-segmentation-using-k-means-clustering-activity-7387763125485236224-lnSM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJvTsUBNY1OXERIJj7nwrqgxwbSISiHJZQ" target="_blank" class="text-blue-600 hover:underline">Watch on LinkedIn</a>
+            <a href="#" target="_blank" class="text-blue-600 hover:underline">Watch on LinkedIn</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="bg-white px-6 py-20">
-    <main class="min-h-screen flex items-center justify-center px-6 py-20">
-      <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-4xl font-bold text-blue-700 mb-6">Get in Touch</h2>
-        <div class="mt-6 space-y-4">
-          <p class="text-lg font-medium">📧 Email: <a href="mailto:sharayubhute22@gmail.com" class="text-blue-600 hover:underline">sharayubhute22@gmail.com</a></p>
-          <p class="text-lg font-medium">🔗 LinkedIn: <a href="https://www.linkedin.com/in/sharayu-bhute/" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/sharayu-bhute</a></p>
-          <p class="text-lg font-medium">📍 Location: Nagpur, Maharashtra</p>
-        </div>
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-blue-700 mb-6">Get in Touch</h2>
+      <div class="mt-6 space-y-4">
+        <p class="text-lg font-medium">📧 Email: <a href="mailto:sharayubhute22@gmail.com" class="text-blue-600 hover:underline">sharayubhute22@gmail.com</a></p>
+        <p class="text-lg font-medium">🔗 LinkedIn: <a href="https://www.linkedin.com/in/sharayu-bhute/" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/sharayu-bhute</a></p>
+        <p class="text-lg font-medium">📍 Location: Nagpur, Maharashtra</p>
       </div>
-    </main>
+    </div>
 
-    <!-- Footer -->
     <footer class="text-center py-6 text-sm text-gray-600">
       &copy; 2025 Sharayu Bhute
     </footer>
